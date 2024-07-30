@@ -7,10 +7,23 @@ import { UserModule } from './user/user.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { TypeEventModule } from './type-event/type-event.module';
 import { ReservationModule } from './reservation/reservation.module';
+import { ConfigModule, ConfigService } from '@nestjs/config';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/event-place'),
+    ConfigModule.forRoot({
+      isGlobal: true,
+      envFilePath: '.env',
+    }),
+    MongooseModule.forRootAsync({
+      imports: [ConfigModule],
+      useFactory: async (configService: ConfigService) => ({
+        uri: configService.get<string>('MONGO_URI'),
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      }),
+      inject: [ConfigService],
+    }),
     UserModule,
     EventsModule,
     UserModule,
