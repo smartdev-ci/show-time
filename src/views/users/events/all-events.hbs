@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Tous les événements à venir | EVENT-PLACE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="author" content="EVENT-PLACE">
+    <meta name="copyright" content="Copyright EVENT-PLACE 2024">
+    <meta name="description"
+        content=" Tous les événements disponibles en un seul endroit. Découvrez les événements du moment et achetez vos places en quelques clics sans vous déplacer.">
+    <link rel="canonical" href="evenements.html" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="evenements.html">
+    <meta property="og:title" content='Tous les événements à venir'>
+    <meta property="og:description"
+        content=" Tous les événements disponibles en un seul endroit. Découvrez les événements du moment et achetez vos places en quelques clics sans vous déplacer.">
+    <meta property="og:image" content="">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="evenements.html">
+    <meta property="twitter:title" content='Tous les événements à venir'>
+    <meta property="twitter:description"
+        content=" Tous les événements disponibles en un seul endroit. Découvrez les événements du moment et achetez vos places en quelques clics sans vous déplacer.">
+    <meta property="twitter:image" content="">
+    <link rel="stylesheet" type="text/css" href="../../bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../../slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../../slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-confirm.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.paginate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/flag-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/stylef7b0.css?v=1813">
+    <link rel="shortcut icon" href="../../img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="mask-icon" href="../../img/favicons/safari-pinned-tab.svg" color="#f0151f">
+    <meta name="msapplication-TileColor" content="#f0151f">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css"
+        href="../../fonts.googleapis.com/csse7ca.css?family=Raleway&amp;display=swap">
+    <link rel="stylesheet" type="text/css" href="../../css/ie10-viewport-bug-workaround.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QNZ8HH5938"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-QNZ8HH5938');
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl w-100">
+        <div class="container-fluid">
+            <button class="navbar-toggler pr-0" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"> <span class="fa-solid fa-bars"></span></button>
+            <a class="navbar-brand mr-0" href="/"><img class="img-fluid" src="../../img/brand/logo_event_place.png"
+                    alt="EVENT PLACE, N°1 de la billetterie événementielle en Côte d'Ivoire. Acheter et vendre des tickets d'événements n'a jamais été aussi facile."></a>
+            <a class="navbar-mobile-btn open-mobile-search-window d-block d-xl-none" href="javascript:void(0)"><span
+                    class="fa-solid fa-magnifying-glass"></span></a>
+            <a class="navbar-mobile-btn d-block d-xl-none pr-2" href="login"><span class="fa-solid fa-user"></span></a>
+            <div class="mobile-search-window">
+                <form id="mobile-search-window-form" action="https://www.tikerama.com/fr/evenements" method="GET">
+                    <div class="d-flex w-100 mt-2">
+                        <div class="close-mobile-search-window m-auto">
+                            <span class="fa-solid fa-arrow-left"></span>
+                        </div>
+                        <input type="text" name="recherche" class="form-control mobile-search-input mr-3"
+                            placeholder='Recherchez un événement...' autocomplete="off">
+                    </div>
+                    <ul class="mobile-search-suggestions border-left border-bottom mt-1"></ul>
+                </form>
+                <div class="search-history"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/events">Événements</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <form id="navbar-search-form" class="d-none d-xl-block"
+                            action="https://www.tikerama.com/fr/evenements" method="GET">
+                            <div class="input-group">
+                                <input type="text" name="recherche" class="navbar-search-input form-control"
+                                    placeholder='Recherchez un événement...'>
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn navbar-search-btn"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </div>
+                            <ul class="navbar-search-suggestions ml-0 display-none"></ul>
+                        </form>
+                    </li>
+                    <div class="vertical-line d-none d-xl-block"></div>
+                    <div class="horizontal-line d-block d-xl-none my-2"></div>
+                    <li class="nav-item dropdown d-none d-xl-block">
+                        <a class="nav-link dropdown-toggle user-navbar-button px-3" href="javascript:void(0)"
+                            id="account-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"><i class="fa-solid fa-user"></i></a>
+                        {{#if admin}}
+                        <div class="dropdown-menu" aria-labelledby="account-dropdown">
+                            <a class="dropdown-item" href="/dashboard">Dashboard</a>
+                            <a class="dropdown-item" href="/logout">Se deconnecter</a>
+                        </div>
+                        {{else if standard}}
+                        <div class="dropdown-menu" aria-labelledby="account-dropdown">
+                            <a class="dropdown-item" href="/users/profil">Profil</a>
+                            <a class="dropdown-item" href="/logout">Se deconnecter</a>
+                        </div>
+                        {{else if nothing}}
+                        <div class="dropdown-menu" aria-labelledby="account-dropdown">
+                            <a class="dropdown-item" href="login">Connexion</a>
+                            <a class="dropdown-item" href="register">Ouvrir un compte</a>
+                        </div>
+                        {{/if}}
+                    </li>
+
+                    <li class="nav-item d-block d-xl-none">
+                        <a class="nav-link" href="login">Connexion</a>
+                    </li>
+                    <li class="nav-item d-block d-xl-none">
+                        <a class="nav-link" href="register">Ouvrir un compte</a>
+                    </li>
+                    <li class="nav-item d-block d-xl-none">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="space-before"></div>
+    <div class="container mt-3">
+        <div class="col-12 pl-0">
+            <ul class="breadcrumb bg-transparent p-0">
+                <li class="mr-2"><small><a href="localhost:3000">Accueil</a> <i class="fa-solid fa-angle-right"></i></small>
+                </li>
+                <li class="font-weight-bold">Événements</li>
+            </ul>
+        </div>
+        <h1 class="h1-with-border text-uppercase pl-2 mt-3">Tous les événements</h1>
+    </div>
+    <div class="container mt-3 mb-5">
+        <div class="row">
+            <div class="col-12 mb-3">
+                <form id="filter-form" action="#" method="GET">
+                    <div class="container add-box-shadow py-2 rounded-10">
+                        <div class="row">
+                            <div class="col-md-3 mb-2 mb-md-0">
+                                <input type="text" name="recherche" class="form-control"
+                                    placeholder=" Recherchez un événement..." value="">
+                            </div>
+                            <div class="col-md-3 mb-2 mb-md-0">
+                                <select name="categorie" class="form-control">
+                                    <option selected class="text-capitalize">Catégories</option>
+                                    <option value="Concert-Spectacle">Concert-Spectacle</option>
+                                    <option value="Sport">Sport</option>
+                                    <option value="Diner Gala">Diner Gala</option>
+                                    <option value="Soirée-Party">Soirée-Party</option>
+                                    <option value="Tourisme">Tourisme</option>
+                                    <option value="Formation">Formation</option>
+                                    <option value="Festival">Festival</option>
+                                    <option value="Rencontre privée">Rencontre privée</option>
+                                    <option value="Rencontre groupée">Rencontre groupée</option>
+                                    <option value="Autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-2 mb-md-0">
+                                <input type="text" id="event-place" value="" name="lieu" class="form-control"
+                                    placeholder="Lieu, ville...">
+                            </div>
+                            <div class="col-md-3">
+                                <button type="submit" class="btn btn-theme w-100 text-capitalize">filtrer <i
+                                        class="fa-solid fa-filter"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12">
+                <div class="container">
+                    <div class="row mb-3">
+                    </div>
+                    <div class="row" id="events-list">
+                        {{#each event}}
+                        <div class="col-md-6 col-lg-4 event-content">
+                            <div class="event-card mx-1 mb-3">
+                                <div class="event-img cursor-pointer">
+                                    <span class="verify-badge bg-success"><i class="fa-solid fa-check"></i>
+                                        vérifié</span>
+                                    <a href="/users/events/{{this._id}}">
+                                        <img class="d-block w-100"
+                                            src="{{ this.image }}"
+                                            alt=" {{this.event_name}}">
+                                    </a>
+                                </div>
+                                <div class="event-info">
+                                    <h3 class="event-title">
+                                        <a href="/users/events/{{this._id}}">{{this.event_name}}</a>
+                                    </h3>
+                                    <ul>
+                                        <li><i class="fa-solid fa-calendar"></i> {{ this.date_due }} <small
+                                                class="text-muted">GMT</small></li>
+                                        <li><i class="fa-solid fa-location-dot"></i>{{this.place}}</li>
+                                        <li><i class="fa-solid fa-money-bill"></i>{{this.cost}}</li>
+                                        <hr>
+                                        <li class="pl-0">Concert-Spectacle</li>
+                                    </ul>
+                                    <div class="footer">
+                                        <a href="/users/events/{{this._id}}">Acheter tickets</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-spinner">
+        <svg viewBox="0 0 100 100">
+            <defs>
+                <filter id="shadow">
+                    <feDropShadow dx="0" dy="0" stdDeviation="0" flood-color="#f0151f" />
+                </filter>
+            </defs>
+            <circle cx="50" cy="50" r="45" />
+        </svg>
+    </div>
+    <form id="action-token">
+        <input type="hidden" name="_token" value="tcmBEqr9xRrjWafq39jYBzWblter8cAV65ENvK5O">
+    </form>
+    <input name="locale" type="hidden" value="fr">
+    <div id="back-to-top" class="cursor-pointer py-1 px-2">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6 mb-3 mb-lg-0">
+                    <a href="localhost:3000"><img class="img-fluid footer-logo" src="../../img/brand/logo_event_place.png"
+                            alt="EVENT-PLACE, N°1 de la billetterie événementielle en Côte d'Ivoire. Acheter et vendre des tickets d'événements n'a jamais été aussi facile."></a>
+                    <p>Achetez et vendez des tickets d'événements.</p>
+                    <div class="store-apps text-center text-lg-left">
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.tikerama.twa">
+                            <img class="img-fluid" src="../../img/fixed/telecharger-tikerama-sur-playstore.png"
+                                alt="Téléchargez l'application EVENT-PLACE depuis Google Play Store et boostez votre expérience lors de vos événements.">
+                        </a>
+                        <a target="_blank" href="https://apps.apple.com/app/tikerama/id6443921996">
+                            <img class="img-fluid" src="../../img/fixed/telecharger-tikerama-sur-app-store.png"
+                                alt="Téléchargez l'application EVENT-PLACE depuis l'App Store et boostez votre expérience lors de vos événements.">
+                        </a>
+                    </div>
+                    <div class="social-list text-center text-lg-left mt-4">
+                        <p class="font-weight-bold">Rejoignez-nous sur les réseaux sociaux :</p>
+                        <ul class="mx-auto">
+                            <li><a href="https://www.facebook.com/tikerama.officiel"><i
+                                        class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/tikerama.civ"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/tikerama"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/tikerama"><i
+                                        class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 mb-3 mb-lg-0">
+                    <h4>Pages</h4>
+                    <div class="s-border"></div>
+                    <div class="m-border"></div>
+                    <ul class="links">
+                        <li><a href="evenements.html">Événements</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="points-de-vente-physique.html">Tous les points de vente</a></li>
+                        <li><a href="nous-contacter.html">Nous contacter</a></li>
+                        <li><a href="../en/connexion.html">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-6 mb-3 mb-lg-0">
+                    <h4 class="text-capitalize">catégories</h4>
+                    <div class="s-border"></div>
+                    <div class="m-border"></div>
+                    <ul class="links">
+                        <li><a href="evenementsb571.html?categorie=Soir%c3%a9e-Party">Soirée-Party</a></li>
+                        <li><a href="evenements3092.html?categorie=Concert-Spectacle">Concert-Spectacle</a></li>
+                        <li><a href="evenements573a.html?categorie=Sport">Sport</a></li>
+                        <li><a href="evenements43ff.html?categorie=Tourisme">Tourisme</a></li>
+                        <li><a href="evenementsb284.html?categorie=Formation">Formation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
+                    <h4>Mentions légales</h4>
+                    <div class="s-border"></div>
+                    <div class="m-border"></div>
+                    <ul class="links">
+                        <li><a href="conditions/politique-de-confidentialite.html">Politique de confidentialité</a></li>
+                        <li><a href="conditions/conditions-generales-de-vente.html">Conditions générales de vente</a>
+                        </li>
+                        <li><a href="conditions/conditions-generales-utilisation.html">Conditions générales
+                                d'utilisation</a></li>
+                        <li><a href="conditions/charte-de-conduite.html">Notre charte de bonne conduite</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center copyright">
+            <small>&copy; 2024 EVENT-PLACE, tous droits reservés.</small>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/popper.min.js"></script>
+    <script type="text/javascript" src="../../bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-confirm.min.js"></script>
+    <script type="text/javascript" src="../../slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="../../js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="https://accounts.google.com/gsi/client" async defer></script>
+    <script type="text/javascript" src="../../js/jwt-decode.min.js"></script>
+    <script type="text/javascript" src="../../js/utils-functionsd318.js?v=4413"></script>
+    <script type="text/javascript" src="../../js/datatables.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.dirty.min.js"></script>
+    <script type="text/javascript"
+        src="../../www.google.com/recaptcha/api5a07.js?render=6Lc8fKQiAAAAAPcKt9lBRuhiVJ5NwmusJnhn0MQH" async></script>
+    <script type="text/javascript" src="../../js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../js/moment.min.js"></script>
+    <script type="text/javascript" src="../../js/moment-timezone-with-data.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.paginate.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.c-share.min.js"></script>
+    <script type="text/javascript" src="../../js/appbf35.js?v=7594"></script>
+</body>
+
+
+<!-- Mirrored from www.tikerama.com/fr/evenements by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jul 2024 23:14:07 GMT -->
+
+</html>

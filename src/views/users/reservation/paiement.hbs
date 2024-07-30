@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<!-- Mirrored from www.tikerama.com/fr/paiement/choix-tickets/concert-luckson-padaud by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jul 2024 23:26:31 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <title>Choix des tickets | Concert Luckson Padaud</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="author" content="TIKERAMA">
+    <meta name="copyright" content="Copyright TIKERAMA 2024">
+    <meta name="description"
+        content="Sélectionnez les types et la quantité de tickets que vous désirez acheter pour Concert Luckson Padaud .">
+    <link rel="canonical" href="https://www.tikerama.com/fr/paiement/choix-tickets/concert-luckson-padaud" />
+    <link rel="stylesheet" type="text/css"
+        href="https://www.tikerama.com/assets/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.tikerama.com/assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.tikerama.com/assets/css/jquery-confirm.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.tikerama.com/assets/css/intlTelInput.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.tikerama.com/assets/css/wan-spinner.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.tikerama.com/assets/css/countrySelect.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.tikerama.com/assets/css/style.css?v=285">
+    <link rel="shortcut icon" href="https://www.tikerama.com/assets/img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://www.tikerama.com/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://www.tikerama.com/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://www.tikerama.com/assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="https://www.tikerama.com/manifest.json" />
+    <link rel="mask-icon" href="https://www.tikerama.com/assets/img/favicons/safari-pinned-tab.svg" color="#f0151f">
+    <meta name="msapplication-TileColor" content="#f0151f">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway&amp;display=swap">
+    <link rel="stylesheet" type="text/css" href="https://www.tikerama.com/assets/css/ie10-viewport-bug-workaround.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QNZ8HH5938"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-QNZ8HH5938');
+    </script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <style>
+        .grecaptcha-badge {
+            visibility: hidden;
+        }
+
+        .country-select {
+            width: 100% !important;
+        }
+    </style>
+    <style>
+        .form-check input {
+            opacity: 0;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #e9ecef;
+            border-radius: 50%;
+            /*border:1px solid #000;*/
+        }
+
+        .form-check:hover input~.checkmark {
+            background-color: #cfd2d4;
+        }
+
+        .form-check input:checked~.checkmark {
+            background-color: #f0151f;
+        }
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .form-check input:checked~.checkmark:after {
+            display: block;
+        }
+
+        .form-check .checkmark:after {
+            top: 5.3px;
+            left: 4.5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg w-100">
+        <a class="navbar-brand mx-auto" href="http://localhost:3000">
+            <img src="../../img/brand/logo_event_place.png"
+                alt="TIKERAMA, N°1 de la billetterie événementielle en Côte d'Ivoire. Acheter et vendre des tickets d'événements n'a jamais été aussi facile.">
+        </a>
+    </nav>
+    <div class="space-before3"></div>
+    <div id="buy-tickets-cta-mobile" class="d-block d-lg-none text-center bg-white pt-1">
+        <small class="next-page-msg red-color blinking d-block"></small>
+        <small class="d-block mb-1 text-muted"><span class="mytooltip">Achetez et recevez les e-tickets par e-mail ou
+                SMS <i class="fa-solid fa-circle-question red-theme-color"></i><span
+                    class="mytooltiptext mytooltip-top">E-ticket avec QR code sécurisé, qui sera scanné à l'entrée le
+                    jour J</span></span></small>
+        <button id="submit-button-mobile" type="submit" class="btn btn-theme text-uppercase w-100">payer en ligne <i
+                class="fa-solid fa-angles-right blinking"></i></button>
+    </div>
+    <form id="go-to-payment-form" method="POST" action="/users/reservation/:_id">
+        <div class="container-fluid mt-4 booking-page">
+            <div class="row">
+
+                <div class="col-12 mb-5">
+                    <h1 class="text-center">Acheter des tickets</h1>
+                    <div class="bar-border mx-auto mb-2 bar-border-02-150"></div>
+                    <div class="text-center">
+                        <p>Choisissez la quantité de tickets pour chaque catégorie.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="row">
+                        <div class="col-12 text-center mb-3">
+                            <h2>{{this.event.event_name}}</h2>
+
+                            <input type="hidden" name="username" value="{{this.user.username}}">
+                            <input type="hidden" name="contact" value="{{this.user.phone}}">
+                            <input type="hidden" name="eventName" value="{{this.event.event_name}}">
+                            <input type="hidden" name="eventDate" value="{{this.event.date_due}}">
+                            <input type="hidden" name="user_id" value="{{this.user._id}}">
+                            <input type="hidden" name="event_id" value="{{this.event._id}}">
+                            <input type="hidden" name="bookingDate" id="bookingDate">
+                            <input type="hidden" name="place" value="{{this.event.place}}">
+                            <p class="text-muted"><span></span></p>
+                            <p><i class="fa-regular fa-calendar"></i> <span>{{this.event.date_due}}<small
+                                        class="text-muted">GMT</small></span>
+                            </p>
+                            <p><i class="fa-solid fa-map-pin"></i> <span>{{this.event.place}}</span></p>
+                        </div>
+                        <div class="col-12 my-3">
+                            <div class="row border-bottom">
+                                <div class="col-sm-8 mb-2 mb-sm-0">
+                                    <h3>Prix du ticket
+                                    </h3>
+                                    <small class="text-muted no-wrap">{{this.event.cost}} F CFA</small>
+                                </div>
+                                <div class="col-sm-4 mb-2 mb-sm-0">
+                                    <div class="wan-spinner ticket-quantity-picker-5761">
+                                        <input type="text" name="quantity" id="ticketQty" value="0" onchange="total()">
+                                        <input type="hidden" name="cost" id="cost" value="{{this.event.cost}}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <img src="{{this.event.image}}" class="img-fluid rounded event-img">
+                    <div class="mt-3">
+                        <h3>Résumé</h3>
+                        <div class="bar-border bar-border-02-90"></div>
+                    </div>
+                    <table class="table">
+                        <tbody>
+                            <tr id="resume-tt-1" style="display:none;">
+                                <td><span id="quantity-tt-1"></span> x </td>
+                                <td><span class="float-right no-wrap" id="total-tt-price-1">{{this.event.cost}} F
+                                        CFA</span></td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td><span class="float-right no-wrap" id="total-ptp"></span></td>
+                                <input type="hidden" name="total" id="total-ptpp">
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12 d-none d-lg-block text-center my-3 pt-1 border-top">
+                    <small class="next-page-msg red-color blinking d-block"></small>
+                    <small class="d-block mb-1 text-muted"><span class="mytooltip">Achetez et recevez les e-tickets par
+                            e-mail ou SMS <i class="fa-solid fa-circle-question red-theme-color"></i><span
+                                class="mytooltiptext mytooltip-top">E-ticket avec QR code sécurisé, qui sera scanné à
+                                l'entrée le jour J</span></span></small>
+                    <button id="payer" type="submit" class="btn btn-theme text-uppercase">payer en ligne <i
+                            class="fa-solid fa-angles-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="modal fade" id="how-it-works-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Comment ça marche ?</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li class="mb-2 border rounded p-1"><i class="fa-solid fa-cart-shopping text-success h3"></i>
+                            Achetez vos tickets en ligne en utilisant <b>Wave, Orange Money, MTN momo, Flooz ou une
+                                carte bancaire</b>. </li>
+                        <li class="mb-2 border rounded p-1"><i class="fa-sharp fa-solid fa-ticket text-success h3"></i>
+                            Les tickets achétés, <b>sécurisés munis de QR code infalsifiables</b> vous seront envoyés
+                            par e-mail ou par SMS.</li>
+                        <li class="mb-2 border rounded p-1"><i class="fa-solid fa-user text-success h3"></i> Si vous
+                            avez un compte associé à l'adresse e-mail utilisée lors de l'achat, <b>vos tickets seront
+                                stockés également en toute sécurité dans votre compte</b>.</li>
+                        <li class="border rounded p-1"><i class="fa-solid fa-qrcode text-success h3"></i> Le jour de
+                            l'événement, vous devez <b>faire scanner le QR code par les agents de contrôle pour accéder
+                                à la salle</b>.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer mx-auto">
+                    <a href="javascript:void(0)" id="do-not-display-how-it-works-modal"
+                        class="btn btn-theme bg-secondary text-uppercase">Ne plus afficher</a>
+                    <a href="javascript:void(0)" data-dismiss="modal" class="btn btn-theme text-uppercase">D'accord</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input id="40957a5483c7cdfe27272f1c05ab1f43" type="hidden"
+        value='eyJsb2NhbGUiOiJmciIsInRpY2tldHNfdHlwZXMiOlsiNTc2MS0xMCIsIjU3NjItMTAiXSwibWluX3RpY2tldF9wcmljZSI6NTAwLCJtYXhfcHJpY2Vfc2luZ2xlX29yZGVyIjozMDAwMDAwLCJjdXJyZW5jeSI6IkYgQ0ZBIiwidXNlcl9pc19kaXN0IjpmYWxzZSwid2hhdHNhcHBfbGluayI6Imh0dHBzOlwvXC93YS5tZVwvMjI1MDcwNTExNjMyNVwvP3RleHQ9Kmh0dHA6XC9cL3d3dy50aWtlcmFtYS5jb21cL2ZyXC9ldmVuZW1lbnRcL2NvbmNlcnQtbHVja3Nvbi1wYWRhdWQqJTBhQm9uam91ciwlMGFKZSBzdWlzIGludFx1MDBlOXJlc3NcdTAwZTkoZSkgcGFyIGwnXHUwMGU5dlx1MDBlOW5lbWVudCAqQ29uY2VydCBMdWNrc29uIFBhZGF1ZCogZXQgaidhaW1lcmFpcyBhY2hldGVyIGRlcyB0aWNrZXRzLiJ9'>
+    <div class="container-spinner">
+        <svg viewBox="0 0 100 100">
+            <defs>
+                <filter id="shadow">
+                    <feDropShadow dx="0" dy="0" stdDeviation="0" flood-color="#f0151f" />
+                </filter>
+            </defs>
+            <circle cx="50" cy="50" r="45" />
+        </svg>
+    </div>
+    <form id="action-token">
+        <input type="hidden" name="_token" value="tcmBEqr9xRrjWafq39jYBzWblter8cAV65ENvK5O">
+    </form>
+    <input name="locale" type="hidden" value="fr">
+    <footer class="booking-footer">
+        <div class="text-center">
+            <small>&copy; 2024 TIKERAMA, tous droits reservés.</small>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://www.tikerama.com/assets/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.tikerama.com/assets/js/popper.min.js"></script>
+    <script type="text/javascript"
+        src="https://www.tikerama.com/assets/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.tikerama.com/assets/js/jquery-confirm.min.js"></script>
+    <script type="text/javascript" src="https://www.tikerama.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="https://www.tikerama.com/assets/js/jquery.dirty.min.js"></script>
+    <script type="text/javascript" src="https://www.tikerama.com/assets/js/intlTelInput.min.js"></script>
+    <script type="text/javascript" src="https://www.tikerama.com/assets/js/wan-spinner.min.js"></script>
+    <script type="text/javascript" src="https://www.tikerama.com/assets/js/utils-functions.js?v=4623"></script>
+    <script type="text/javascript"
+        src="https://www.google.com/recaptcha/api.js?render=6Lc8fKQiAAAAAPcKt9lBRuhiVJ5NwmusJnhn0MQH" async></script>
+    <script type="text/javascript" src="https://www.tikerama.com/assets/js/html5-qrcode.min.js"></script>
+    <script type="text/javascript" src="https://www.tikerama.com/assets/js/countrySelect.min.js"></script>
+    <script type="text/javascript" src="https://web.squarecdn.com/v1/square.js?v=4913"></script>
+    <script type="text/javascript" src="../../js/payment.js?v=8798"></script>
+    <script>
+        const input = document.getElementById('bookingDate');
+        const dt = new Date();
+        const day = ("0" + dt.getDate()).slice(-2);
+        const month = ("0" + (dt.getMonth() + 1)).slice(-2);
+        const date = dt.getFullYear() + "-" + month + "-" + day;
+        input.value = date
+
+        function total() {
+        // Récupérer les valeurs de coût et quantité
+        const cost = parseFloat(document.getElementById('cost').value) || 0;
+        const qty = parseInt(document.getElementById('ticketQty').value, 10) || 0;
+
+        // Calculer le total
+        const prix_total = cost * qty;
+
+        // Mettre à jour l'affichage du total
+        document.getElementById('total-ptp').innerText = prix_total.toFixed(2); // Afficher avec deux décimales
+
+        // Mettre à jour le champ caché pour le total
+        document.getElementById('total-ptpp').value = prix_total.toFixed(2); // Afficher avec deux décimales
+    }
+
+    // Ajouter un écouteur d'événement pour mettre à jour le total au changement de la quantité
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialiser le total au chargement de la page
+        total(); 
+        
+        // Assurez-vous que la fonction est appelée lorsque la quantité change
+        document.getElementById('ticketQty').addEventListener('input', total);
+    });
+    </script>
+</body>
+
+</html>

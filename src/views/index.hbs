@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <title>EVENT PLACE : N°1 de la billetterie événementielle</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="author" content="EVENT PLACE">
+    <meta name="copyright" content="Copyright EVENT PLACE 2024">
+    <meta name="description"
+        content="Vente et achat de tickets d'événements sur EVENT PLACE : rapidité, sécurité et simplicité garanties ! Choisissez notre plateforme numérique, en ligne et physique.">
+    <link rel="canonical" href="localhost:3000" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="localhost:3000">
+    <meta property="og:title" content="EVENT PLACE : N°1 de la billetterie événementielle">
+    <meta property="og:description"
+        content="Vente et achat de tickets d'événements sur EVENT PLACE : rapidité, sécurité et simplicité garanties ! Choisissez notre plateforme numérique, en ligne et physique.">
+    <meta property="og:image" content="">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="localhost:3000">
+    <meta property="twitter:title" content="EVENT PLACE : N°1 de la billetterie événementielle">
+    <meta property="twitter:description"
+        content="Vente et achat de tickets d'événements sur EVENT PLACE : rapidité, sécurité et simplicité garanties ! Choisissez notre plateforme numérique, en ligne et physique.">
+    <meta property="twitter:image" content="">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-confirm.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.paginate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flag-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style5f1a.css?v=7914">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#f0151f">
+    <meta name="msapplication-TileColor" content="#f0151f">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="../fonts.googleapis.com/csse7ca.css?family=Raleway&amp;display=swap">
+    <link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QNZ8HH5938"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-QNZ8HH5938');
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl w-100">
+        <div class="container-fluid">
+            <button class="navbar-toggler pr-0" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"> <span class="fa-solid fa-bars"></span></button>
+            <a class="navbar-brand mr-0" href="/"><img class="img-fluid" src="img/brand/logo_event_place.png"
+                    alt="EVENT PLACE, N°1 de la billetterie événementielle en Côte d'Ivoire. Acheter et vendre des tickets d'événements n'a jamais été aussi facile."></a>
+            <a class="navbar-mobile-btn open-mobile-search-window d-block d-xl-none" href="javascript:void(0)"><span
+                    class="fa-solid fa-magnifying-glass"></span></a>
+            <a class="navbar-mobile-btn d-block d-xl-none pr-2" href="login"><span class="fa-solid fa-user"></span></a>
+            <div class="mobile-search-window">
+                <form id="mobile-search-window-form" action="https://www.tikerama.com/fr/evenements" method="GET">
+                    <div class="d-flex w-100 mt-2">
+                        <div class="close-mobile-search-window m-auto">
+                            <span class="fa-solid fa-arrow-left"></span>
+                        </div>
+                        <input type="text" name="recherche" class="form-control mobile-search-input mr-3"
+                            placeholder='Recherchez un événement...' autocomplete="off">
+                    </div>
+                    <ul class="mobile-search-suggestions border-left border-bottom mt-1"></ul>
+                </form>
+                <div class="search-history"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/events">Événements</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <form id="navbar-search-form" class="d-none d-xl-block"
+                            action="https://www.tikerama.com/fr/evenements" method="GET">
+                            <div class="input-group">
+                                <input type="text" name="recherche" class="navbar-search-input form-control"
+                                    placeholder='Recherchez un événement...'>
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn navbar-search-btn"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </div>
+                            <ul class="navbar-search-suggestions ml-0 display-none"></ul>
+                        </form>
+                    </li>
+                    <div class="vertical-line d-none d-xl-block"></div>
+                    <div class="horizontal-line d-block d-xl-none my-2"></div>
+                    <li class="nav-item dropdown d-none d-xl-block">
+                        <a class="nav-link dropdown-toggle user-navbar-button px-3" href="javascript:void(0)"
+                            id="account-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"><i class="fa-solid fa-user"></i></a>
+                        {{#if admin}}
+                        <div class="dropdown-menu" aria-labelledby="account-dropdown">
+                            <a class="dropdown-item" href="/dashboard">Dashboard</a>
+                            <a class="dropdown-item" href="/logout">Se deconnecter</a>
+                        </div>
+                        {{else if standard}}
+                        <div class="dropdown-menu" aria-labelledby="account-dropdown">
+                            <a class="dropdown-item" href="/users/profil">Profil</a>
+                            <a class="dropdown-item" href="/logout">Se deconnecter</a>
+                        </div>
+                        {{else if nothing}}
+                        <div class="dropdown-menu" aria-labelledby="account-dropdown">
+                            <a class="dropdown-item" href="login">Connexion</a>
+                            <a class="dropdown-item" href="register">Ouvrir un compte</a>
+                        </div>
+                        {{/if}}
+                    </li>
+
+                    <li class="nav-item d-block d-xl-none">
+                        <a class="nav-link" href="login">Connexion</a>
+                    </li>
+                    <li class="nav-item d-block d-xl-none">
+                        <a class="nav-link" href="register">Ouvrir un compte</a>
+                    </li>
+                    <li class="nav-item d-block d-xl-none">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="space-before"></div>
+
+    <div class="container-fluid text-center p-0">
+        <div class="swiper organizer-swiper">
+            <div class="swiper-wrapper my-3">
+                {{#each types}}
+                <div class="swiper-slide">
+                    <a href="/users/events/">{{this.name}}</a>
+                </div>
+                {{/each}}
+            </div>
+            <div class="swiper-custom-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="swiper-custom-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-5 home-page">
+        <div class="row">
+
+            <div class="col-md-6 text-center mt-5 py-0 py-md-5">
+                <h1 class="d-none d-md-block text-white text-uppercase font-weight-bold">N°1 de la billetterie
+                    événementielle</h1>
+                <h2 class="text-white my-4">Achetez vos tickets : </h2>
+                <ul class="text-left ml-md-5">
+                    <li class="mb-2"><i class="fa-solid fa-globe h3 text-warning mr-2"></i><a
+                            class="text-white border-bottom" href="/users/events/">En ligne</a></li>                </ul>
+            </div>
+
+            <div class="col-md-6 my-5 py-0 py-md-5">
+                <form class="inline-search-area" action="#" method="GET">
+                    <div class="input-group">
+                        <input type="text" name="recherche" class="form-control form-search-input"
+                            placeholder=" Recherchez un événement...">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-theme"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <ul class="form-search-suggestions ml-0 display-none"></ul>
+                </form>
+                <div class="swiper features-swiper pb-4">
+                    <div class="swiper-wrapper m-2">
+                        <div class="swiper-slide bg-b features-name">
+                            <a href="/users/events">Tous les événements</a>
+                        </div>
+                        {{#each types}}
+                        <div class="swiper-slide bg-b features-name">
+                            <a href="/users/events/">{{this.name}}</a>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="swiper-custom-button-next2"></div>
+                    <div class="swiper-custom-button-prev2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="section-title text-center text-md-left">
+            <h2>Y-a quels mouvements ?</h2>
+            <div class="bar-border mx-auto mx-md-0 bar-border-02-200"></div>
+            <p class="mt-3">Découvrez les événements du moment et achetez vos places</p>
+        </div>
+        <div class="row">
+            {{#each event}}
+            <div class="col-md-4 event-card mb-2">
+                <div class="event-img cursor-pointer">
+                    <span class="verify-badge bg-success"><i class="fa-solid fa-check"></i> vérifié</span>
+                    <a href="/users/events/{{this._id}}">
+                        <img class="d-block w-100" src="{{this.image}}" alt="{{this.event_name}}">
+                    </a>
+                </div>
+                <div class="event-info">
+                    <h3 class="event-title">
+                        <a href="/users/events/{{this._id}}">{{ this.event_name }}</a>
+                    </h3>
+                    <ul>
+                        <li><i class="fa-solid fa-calendar"></i> {{this.date_due}} <small class="text-muted">GMT</small>
+                        </li>
+                        <li><i class="fa-solid fa-location-dot"></i>{{ this.place }}</li>
+                        <li><i class="fa-solid fa-money-bill"></i> {{ this.cost }} FCFA</li>
+                        <hr>
+                        <li class="pl-0">Concert-Spectacle</li>
+                    </ul>
+                    <div class="footer">
+                        <a href="/events/{{this._id}}">Acheter tickets</a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="text-center my-5">
+            <a href="/users/events" class="btn btn-theme text-uppercase">Plus d'événements <i
+                    class="fa-solid fa-angles-right"></i></a>
+        </div>
+    </div>
+
+    <div class="container mb-5 pb-5">
+        <div class="section-title text-center text-md-left">
+            <h2>Trouvez par catégorie</h2>
+            <div class="bar-border mx-auto mx-md-0 bar-border-02-200"></div>
+            <p class="mt-3">En un clin d'œil, accédez à tous les événements correspondant à votre mood actuel</p>
+        </div>
+        <div class="slick-area-popular-cats">
+            {{#each types}}
+            <div class="slick-slide popular-category mx-2">
+                <div class="category-bg-box cat-private-meeting-bg"
+                    onclick="location.href='/users/events/';">
+                    <div class="category-overlay">
+                        <h3 class="ml-2"><a href="/users/events/"></a>{{this.name}}</h3>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="container-fluid testimonial">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="text-white">avis utilisateurs</h2>
+                <div class="bar-border mx-auto bar-border-02-200"></div>
+                <p class="text-white mt-3">Nos utilisateurs parlent de nous. 🥰</p>
+            </div>
+            <div class="row">
+                <div class="offset-lg-2 col-lg-8">
+                    <div class="testimonial-inner">
+                        <div id="carousel-indicator" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-indicator" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-indicator" data-slide-to="1" class=""></li>
+                                <li data-target="#carousel-indicator" data-slide-to="2" class=""></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="testimonial-info">
+                                        <div class="sz">
+                                            <p class="lead">EVENT PLACE est un excellent outil pour organiser des
+                                                événements. Il est simple d'utilisation et avec un modèle de facturation
+                                                accessible pour toute taille d'entreprise.</p>
+                                        </div>
+                                        <div class="media mb-4">
+                                            <img src="img/fixed/avatar-utilisateur.png"
+                                                alt="Avis n°1 utilisateur ayant utilisé EVENT PLACE." class="img-fluid">
+                                            <div class="media-body align-self-center">
+                                                <h5 class="ml-1">Anne B.</h5>
+                                                <h6 class="ml-1">Gérant de boîte de nuit</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial-info">
+                                        <div class="sz">
+                                            <p class="lead">Un excellent outil pour trouver des événements pendant les
+                                                week-ends quand je n'avais rien de prévu. J'ai toujours trouvé un
+                                                événement qui me convenait.</p>
+                                        </div>
+                                        <div class="media mb-4">
+                                            <img src="img/fixed/avatar-utilisateur.png"
+                                                alt="Avis n°2 utilisateur ayant utilisé EVENT PLACE." class="img-fluid">
+                                            <div class="media-body align-self-center">
+                                                <h5 class="ml-1">Antoine M.</h5>
+                                                <h6 class="ml-1">Participant</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial-info">
+                                        <div class="sz">
+                                            <p class="lead">J'organise souvent des formations et j'utilise EVENT PLACE
+                                                pour permettre à mes clients d'acheter assez facilement. Ils peuvent le
+                                                faire par exemple dans n'importe quel point de vente EVENT PLACE, ce qui
+                                                est super.</p>
+                                        </div>
+                                        <div class="media mb-4">
+                                            <img src="img/fixed/avatar-utilisateur.png"
+                                                alt="Avis n°3 utilisateur ayant utilisé EVENT PLACE." class="img-fluid">
+                                            <div class="media-body align-self-center">
+                                                <h5 class="ml-1">Emma C.</h5>
+                                                <h6 class="ml-1">Formatrice</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-spinner">
+        <svg viewBox="0 0 100 100">
+            <defs>
+                <filter id="shadow">
+                    <feDropShadow dx="0" dy="0" stdDeviation="0" flood-color="#f0151f" />
+                </filter>
+            </defs>
+            <circle cx="50" cy="50" r="45" />
+        </svg>
+    </div>
+    <input name="locale" type="hidden" value="fr">
+    <div id="back-to-top" class="cursor-pointer py-1 px-2">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6 mb-3 mb-lg-0">
+                    <a href="localhost:3000"><img class="img-fluid footer-logo" src="img/brand/logo_event_place.png"
+                            alt="EVENT PLACE, N°1 de la billetterie événementielle en Côte d'Ivoire. Acheter et vendre des tickets d'événements n'a jamais été aussi facile."></a>
+                    <p>Achetez et vendez des tickets d'événements.</p>
+                    <div class="store-apps text-center text-lg-left">
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.tikerama.twa">
+                            <img class="img-fluid" src="img/fixed/telecharger-tikerama-sur-playstore.png"
+                                alt="Téléchargez l'application EVENT PLACE depuis Google Play Store et boostez votre expérience lors de vos événements.">
+                        </a>
+                        <a target="_blank" href="https://apps.apple.com/app/tikerama/id6443921996">
+                            <img class="img-fluid" src="img/fixed/telecharger-tikerama-sur-app-store.png"
+                                alt="Téléchargez l'application EVENT PLACE depuis l'App Store et boostez votre expérience lors de vos événements.">
+                        </a>
+                    </div>
+                    <div class="social-list text-center text-lg-left mt-4">
+                        <p class="font-weight-bold">Rejoignez-nous sur les réseaux sociaux :</p>
+                        <ul class="mx-auto">
+                            <li><a href="https://www.facebook.com/tikerama.officiel"><i
+                                        class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/tikerama.civ"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/tikerama"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/tikerama"><i
+                                        class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 mb-3 mb-lg-0">
+                    <h4>Pages</h4>
+                    <div class="s-border"></div>
+                    <div class="m-border"></div>
+                    <ul class="links">
+                        <li><a href="fr/evenements.html">Événements</a></li>
+                        <li><a href="fr/faq.html">FAQ</a></li>
+                        <li><a href="fr/points-de-vente-physique.html">Tous les points de vente</a></li>
+                        <li><a href="fr/nous-contacter.html">Nous contacter</a></li>
+                        <li><a href="en/connexion.html">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-6 mb-3 mb-lg-0">
+                    <h4 class="text-capitalize">catégories</h4>
+                    <div class="s-border"></div>
+                    <div class="m-border"></div>
+                    <ul class="links">
+                        <li><a href="fr/evenementsb571.html?categorie=Soir%c3%a9e-Party">Soirée-Party</a></li>
+                        <li><a href="fr/ Less3092.html?categorie=Concert-Spectacle">Concert-Spectacle</a></li>
+                        <li><a href="fr/evenements573a.html?categorie=Sport">Sport</a></li>
+                        <li><a href="fr/evenements43ff.html?categorie=Tourisme">Tourisme</a></li>
+                        <li><a href="fr/evenementsb284.html?categorie=Formation">Formation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-3 mb-lg-0">
+                    <h4>Mentions légales</h4>
+                    <div class="s-border"></div>
+                    <div class="m-border"></div>
+                    <ul class="links">
+                        <li><a href="fr/conditions/politique-de-confidentialite.html">Politique de confidentialité</a>
+                        </li>
+                        <li><a href="fr/conditions/conditions-generales-de-vente.html">Conditions générales de vente</a>
+                        </li>
+                        <li><a href="fr/conditions/conditions-generales-utilisation.html">Conditions générales
+                                d'utilisation</a></li>
+                        <li><a href="fr/conditions/charte-de-conduite.html">Notre charte de bonne conduite</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center copyright">
+            <small>&copy; 2024 EVENT PLACE, tous droits reservés.</small>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-confirm.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="https://accounts.google.com/gsi/client" async defer></script>
+    <script type="text/javascript" src="js/jwt-decode.min.js"></script>
+    <script type="text/javascript" src="js/utils-functionsdd57.js?v=5204"></script>
+    <script type="text/javascript" src="js/datatables.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dirty.min.js"></script>
+    <script type="text/javascript"
+        src="../www.google.com/recaptcha/api5a07.js?render=6Lc8fKQiAAAAAPcKt9lBRuhiVJ5NwmusJnhn0MQH" async></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/moment-timezone-with-data.min.js"></script>
+    <script type="text/javascript" src="js/jquery.paginate.min.js"></script>
+    <script type="text/javascript" src="js/jquery.c-share.min.js"></script>
+    <script type="text/javascript" src="js/app2873.js?v=1083"></script>
+</body>
+
+</html>

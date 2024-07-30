@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<head>
+    <title>Se connecter à un compte | TIKERAMA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="author" content="TIKERAMA">
+    <meta name="copyright" content="Copyright TIKERAMA 2024">
+    <meta name="description" content="Connectez-vous dès maintenant à votre compte pour profiter de toutes les fonctionnalités de TIKERAMA, y compris la création et la publication d'événements.">
+<link rel="canonical" href="connexion.html" />
+<meta property="og:type" content="website">
+<meta property="og:url" content="connexion.html">
+<meta property="og:title" content="Se connecter à un compte | TIKERAMA">
+<meta property="og:description" content="Connectez-vous dès maintenant à votre compte pour profiter de toutes les fonctionnalités de TIKERAMA, y compris la création et la publication d'événements.">
+<meta property="og:image" content="">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="connexion.html">
+<meta property="twitter:title" content='Se connecter à un compte | TIKERAMA'>
+<meta property="twitter:description" content="Connectez-vous dès maintenant à votre compte pour profiter de toutes les fonctionnalités de TIKERAMA, y compris la création et la publication d'événements.">
+<meta property="twitter:image" content="">
+    <meta name="google-signin-client_id" content="926674300782-tn5uj45pauv037at4p9dfrdhrjbtpbfo.apps.googleusercontent.com">
+    <link rel="stylesheet" type="text/css" href="/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/jquery-confirm.min.css">
+    <link rel="stylesheet" type="text/css" href="/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/intlTelInput.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style74c6.css?v=2188">
+    <style>
+        .grecaptcha-badge {
+            visibility: visible;
+        }
+    </style>
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="../manifest.json" />
+<link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#f0151f">
+<meta name="msapplication-TileColor" content="#f0151f">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" type="text/css" href="../../fonts.googleapis.com/csse7ca.css?family=Raleway&amp;display=swap">
+<link rel="stylesheet" type="text/css" href="/css/ie10-viewport-bug-workaround.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNZ8HH5938"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-QNZ8HH5938');
+</script>    </head>
+
+<body>
+    <nav class="navbar navbar-expand-lg w-100">
+        <a class="navbar-brand mx-auto" href="/">
+            <img class="img-fluid" src="/img/brand/logo_event_place.png" alt="TIKERAMA, N°1 de la billetterie événementielle en Côte d'Ivoire. Acheter et vendre des tickets d'événements n'a jamais été aussi facile.">
+        </a>
+    </nav>
+    <div class="space-before2"></div>
+    <div class="container mb-5">
+        <a href="/" class="text-secondary text-capitalize"><i class="fa-solid fa-angle-left"></i> retour</a>
+    <div class="row mt-3">
+        <div class="col-lg-6 auth-form">
+            <div class="form-content p-3">
+                <h1 class="mb-3">Connectez-vous</h1>
+                <form id="signin-form" method="POST" action="login">
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder='Adresse email *' required>
+                    </div>
+                    <div class="form-group">
+                        <div class="password-field">
+                            <input type="password" name="password" class="form-control" placeholder='Mot de passe *' required>
+                            <span><i id="show-password" class="fa-solid fa-eye"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <p id="global-form-errorMessage" class="red-color"></p>
+                        <button id="submit-button" type="submit" class="btn rounded btn-theme-1">Connexion</button>
+                    </div>
+                <a href="mot-de-passe-oublie.html"><small><u>Mot de passe oublié ?</u></small></a>
+            </div>
+            <div class="divider mt-3">
+                <span class="divider-text">ou</span>
+            </div>
+            <div class="oauth">
+                                <div class="oauth-google">
+                    <div id="g_id_onload" data-client_id="926674300782-tn5uj45pauv037at4p9dfrdhrjbtpbfo.apps.googleusercontent.com" data-callback="handleGoogleLogin"></div>
+                    <div class="g_id_signin" data-type="standard" data-size="medium" data-locale="fr"></div>
+                </div>
+                                <div class="oauth-facebook mt-2">
+                    <div class="fb-login-button" data-onlogin="handleFacebookLogin();" data-scope="email,public_profile" data-width="" data-size="medium" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <span>Pas encore membre ? <a href="/register"><u>Ouvrez un compte</u></a></span>
+            </div>
+        </div>
+        <div class="col-lg-6 mt-5 mt-lg-0">
+            <h2 class="text-center">Après connexion</h2>
+            <div class="bar-border mx-auto bar-border-02-200"></div>
+            <div class="auth-help mt-4">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-square-check"></i>
+                        Soyez informé en direct des événements qui vous intéressent.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-square-check"></i>
+                        Enregistrez des tickets et achetez plus tard dans un point de vente physique.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-square-check"></i>
+                        Achat rapide grâce au remplissage automatique lors des commandes de tickets.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-square-check"></i>
+                        Bénéficiez de 100% des fonctionnalités de TIKERAMA : historique de vos achats, annulation de tickets, etc.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-square-check"></i>
+                        Organisez et publiez vos événements sans effort pour le plus grand plaisir de vos invités.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-square-check"></i>
+                        Et bien d'autres avantages...
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container-spinner">
+    <svg viewBox="0 0 100 100">
+        <defs>
+            <filter id="shadow">
+                <feDropShadow dx="0" dy="0" stdDeviation="0" flood-color="#f0151f" />
+            </filter>
+        </defs>
+        <circle cx="50" cy="50" r="45" />
+    </svg>
+</div>
+<form id="action-token">
+    <input type="hidden" name="_token" value="tcmBEqr9xRrjWafq39jYBzWblter8cAV65ENvK5O"></form>
+<input name="locale" type="hidden" value="fr">    <div id="back-to-top" class="cursor-pointer py-1 px-2">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <footer class="text-center auth-footer">
+        <ul class="list-inline my-2">
+            <li class="list-inline-item pl-2">
+                <a href="comment-ca-marche.html">Comment ça marche ?</a>
+            </li>
+            <li class="list-inline-item pl-2 border-left">
+                <a href="evenements.html">Tous les événements</a>
+            </li>
+            <li class="list-inline-item pl-2 border-left">
+                <a href="points-de-vente-physique.html">Points de vente physique</a>
+            </li>
+            <li class="list-inline-item pl-2 border-left">
+                <a href="faq.html">FAQ</a>
+            </li>
+            <li class="list-inline-item pl-2 border-left">
+                <a href="tarifs.html">Tarifs</a>
+            </li>
+            <li class="list-inline-item pl-2 border-left">
+                <a href="nous-contacter.html">Nous contacter</a>
+            </li>
+            <li class="list-inline-item pl-2 border-left">
+                <a href="mentions-legales.html">Mentions légales</a>
+            </li>
+        </ul>
+        <div class="copyright">
+            <small>&copy; 2024 TIKERAMA, tous droits reservés.</small>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+    <script type="text/javascript" src="/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-confirm.min.js"></script>
+    <script type="text/javascript" src="/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="/js/jquery.dirty.min.js"></script>
+    <script type="text/javascript" src="/js/intlTelInput.min.js"></script>
+    <script type="text/javascript" src="https://accounts.google.com/gsi/client" async defer></script>
+    <script type="text/javascript" src="/js/jwt-decode.min.js"></script>
+    <script type="text/javascript" src="../../connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v15.0&appId=815330586452577&autoLogAppEvents=1" crossorigin="anonymous" nonce="nsvvXlCI" async defer></script>
+    <script type="text/javascript" src="../../www.google.com/recaptcha/api5a07.js?render=6Lc8fKQiAAAAAPcKt9lBRuhiVJ5NwmusJnhn0MQH" async></script>
+    </body>
+</html>
