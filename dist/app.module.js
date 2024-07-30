@@ -22,7 +22,7 @@ exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
-            mongoose_1.MongooseModule.forRoot('mongodb://localhost:27017/event-place'),
+            mongoose_1.MongooseModule.forRoot('mongodb+srv://adouko_94:arioPIGIER94@cluster0.lg62tkh.mongodb.net/eventplace'),
             user_module_1.UserModule,
             events_module_1.EventsModule,
             user_module_1.UserModule,
