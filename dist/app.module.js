@@ -16,26 +16,13 @@ const user_module_1 = require("./user/user.module");
 const dashboard_module_1 = require("./dashboard/dashboard.module");
 const type_event_module_1 = require("./type-event/type-event.module");
 const reservation_module_1 = require("./reservation/reservation.module");
-const config_1 = require("@nestjs/config");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
 exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
-            config_1.ConfigModule.forRoot({
-                isGlobal: true,
-                envFilePath: '.env',
-            }),
-            mongoose_1.MongooseModule.forRootAsync({
-                imports: [config_1.ConfigModule],
-                useFactory: async (configService) => ({
-                    uri: configService.get('MONGO_URI'),
-                    useNewUrlParser: true,
-                    useUnifiedTopology: true,
-                }),
-                inject: [config_1.ConfigService],
-            }),
+            mongoose_1.MongooseModule.forRoot('mongodb+srv://adouko_94:ario2024@cluster0.lg62tkh.mongodb.net/event-place/'),
             user_module_1.UserModule,
             events_module_1.EventsModule,
             user_module_1.UserModule,
