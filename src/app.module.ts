@@ -10,7 +10,9 @@ import { ReservationModule } from './reservation/reservation.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/event-place'),
+    MongooseModule.forRoot(
+      'mongodb+srv://adouko_94:arioPIGIER@cluster0.lg62tkh.mongodb.net/?retryWrites=true&w=majority&dbname=eventplace',
+    ),
     UserModule,
     EventsModule,
     UserModule,
